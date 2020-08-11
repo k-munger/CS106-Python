@@ -12,6 +12,7 @@ while True:
     if name in known_users:
         print("Name recognised. Hello there, {}!".format(name))
 # If the system recognises the name, user can choose to remove name from the known_users list
+# List will update if user is removed from known_users
         remove = input("Would you like to be removed from the system? (y/n)?: ").lower()
         if remove == "y":
             known_users.remove(name)
@@ -20,7 +21,7 @@ while True:
             print(known_users)
             known_users.remove(name)
             print()
-            print("Here is the updated list") # List will update if user is removed from known_users
+            print("Here is the updated list"
             print()
             print(known_users)
             
